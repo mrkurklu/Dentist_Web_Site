@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+<!-- datepicker cdn -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet"
+    type="text/css" />
+
+
+
+
+<head>
+    <!-- LOading function J Query link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overton Family Dental</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- loading function&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+    <div class="loader-bg">
+        <h3>Loading...</h3>
+        <div class="loader">
+            <span></span>
+        </div>
+    </div>
+
+    <!-- End the loading function%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header fixed-top">
+
+        <div class="container">
+
+            <div class="row align-items-center justify-content-between">
+
+                <a href="#home" class="logo">Overton <span>Family Dental</span></a>
+
+                <nav class="nav">
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#services">services</a>
+                    <a href="#process">process</a>
+                    <a href="#reviews">reviews</a>
+                </nav>
+
+                <a href="#map" class="link-btn">Find Us</a>
+
+                <div id="menu-btn" class="fas fa-bars"></div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="container">
+
+            <div class="row min-vh-100 align-items-center">
+                <div class="content text-center text-md-left">
+                    <h3>let us brighten your smile</h3>
+                    <p>Experience world-class dental care in a comfortable and friendly environment. We are dedicated to
+                        providing the highest quality treatments tailored to your unique needs.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6 image">
+                    <img src="images/about-img.jpg" class="w-100 mb-5 mb-md-0" alt="">
+                </div>
+
+                <div class="col-md-6 content">
+                    <h2>About us</h2>
+                    <h3>True Healthcare For Your Family</h3>
+                    <p> At Overton Family Dental, our priority is to deliver comprehensive and compassionate dental care
+                        to patients of all ages. From regular checkups to advanced cosmetic procedures, our skilled team
+                        uses modern technology and techniques to ensure your smile is beautiful and healthy for a
+                        lifetime.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">our services</h1>
+
+        <div class="box-container container">
+
+            <div class="box">
+                <img src="images/icon-1.svg" alt="">
+                <h3>Alignment specialist</h3>
+                <p>Expert realignment techniques and clear aligners to correct bite issues and perfect your smile.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-2.svg" alt="">
+                <h3>Cosmetic dentistry</h3>
+                <p>Transform your smile with professional whitening, veneers, and aesthetic treatments.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-3.svg" alt="">
+                <h3>Oral hygiene experts</h3>
+                <p>Comprehensive teeth cleaning and preventative care to maintain optimal oral health.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-4.svg" alt="">
+                <h3>Root canal specialist</h3>
+                <p>Painless and efficient root canal therapies to save infected or damaged teeth.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-5.svg" alt="">
+                <h3>Live dental advisory</h3>
+                <p>Online consultations and expert advice on dental routines from our experienced specialists.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-6.svg" alt="">
+                <h3>Cavity inspection</h3>
+                <p>Detailed cavity screenings using advanced imaging technology to catch decay early.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- process section starts  -->
+
+    <section class="process" id="process">
+
+        <h1 class="heading">work process</h1>
+
+        <div class="box-container container">
+
+            <div class="box">
+                <img src="images/process-1.png" alt="">
+                <h3>Cosmetic Dentistry</h3>
+                <p>Enhancing the visual aesthetics of your teeth with precision-crafted cosmetic solutions.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/process-2.png" alt="">
+                <h3>Pediatric Dentistry</h3>
+                <p>Gentle and friendly dental care to keep your children's smiles healthy and bright.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/process-3.png" alt="">
+                <h3>Dental Implants</h3>
+                <p>Permanent and natural-looking tooth replacements to restore function and confidence.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <br>
+    <!-- process section ends -->
+
+    <!-- reviews section starts  -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="row blog">
+                <h1 class="center mx-auto text-center py-4">Our reviews</h1>
+
+                <div class="col-md-12">
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="invisible carousel-indicators">
+                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#blogCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team" style="padding-bottom: 20px;">
+                                            <div class="text-warning mb-2" style="font-size: 1.5rem;">
+                                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                            <div class="team-content">
+                                                <h3 class="title">Danville Belle</h3>
+                                                <p class="post"
+                                                    style="text-transform: none; text-align: justify; font-size: 1.2rem; margin-top: 10px; opacity: 0.8;">
+                                                    "I cannot say enough good things about Dr. Bryan and his staff! I
+                                                    have SEVERE dental anxiety and am always worried about visiting a
+                                                    new dental office. Dr. Bryan and Aurora immediately put me at ease -
+                                                    they are warm, friendly, personable..."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team" style="padding-bottom: 20px;">
+                                            <div class="text-warning mb-2" style="font-size: 1.5rem;">
+                                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                            <div class="team-content">
+                                                <h3 class="title">Yvonne Croteau</h3>
+                                                <p class="post"
+                                                    style="text-transform: none; text-align: justify; font-size: 1.2rem; margin-top: 10px; opacity: 0.8;">
+                                                    "Dr. Bryan is super nice, he was very patient with me and my
+                                                    anxiety, and didn't start treatment until I was ready. Overall I'm
+                                                    very pleased with my treatment, the office is very clean. Ms. Margie
+                                                    is very nice and helpful. I highly recommend Dr. Bryan at overton
+                                                    family dental."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team" style="padding-bottom: 20px;">
+                                            <div class="text-warning mb-2" style="font-size: 1.5rem;">
+                                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                            <div class="team-content">
+                                                <h3 class="title">Edward Nolan</h3>
+                                                <p class="post"
+                                                    style="text-transform: none; text-align: justify; font-size: 1.2rem; margin-top: 10px; opacity: 0.8;">
+                                                    "I drove 45 minutes to see Dr. Bryan and it was well worth the
+                                                    drive. The staff there was great, and they made me feel comfortable!
+                                                    Thanks for extracting my wisdom tooth, I finally have some relief,
+                                                    praise God!"</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team" style="padding-bottom: 20px;">
+                                            <div class="text-warning mb-2" style="font-size: 1.5rem;">
+                                                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                            <div class="team-content">
+                                                <h3 class="title">Janell Himes</h3>
+                                                <p class="post"
+                                                    style="text-transform: none; text-align: justify; font-size: 1.2rem; margin-top: 10px; opacity: 0.8;">
+                                                    "This dentist is amazing and very caring. I don’t like going to the
+                                                    dentist cause it always hurts. He made sure I did not hurt and took
+                                                    care of the issue right away so I was no longer in pain..."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- reviews section ends -->
+
+    <!-- map section starts  -->
+
+    <section class="map" id="map" style="padding-top: 2rem;">
+        <h1 class="heading"> Find Us </h1>
+        <div class="container-fluid px-0">
+            <iframe
+                src="https://maps.google.com/maps?q=Overton%20Family%20Dental,%20102%20W%20Henderson%20St,%20Overton,%20TX%2075684&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- map section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container container">
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <p>+1 903-522-4691</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>our address</h3>
+                <p>102 W Henderson St, Overton,</p>
+                <p>TX 75684, USA</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>opening hours</h3>
+                <p>Closes 16:30</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>Email address</h3>
+                <p>info@overtonfamilydental.com</p>
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+    <!-- j query -->
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
