@@ -644,6 +644,11 @@ h1 div:first-child {
 }
 
 @media (max-width:768px) {
+    .header .link-btn {
+        margin-left: auto;
+        margin-right: 1.5rem;
+    }
+
     section {
         padding: 3rem 1rem;
     }
