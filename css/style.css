@@ -81,6 +81,7 @@ label {
     50% {
         transform: rotate(calc(180deg));
     }
+
     100% {
         transform: rotate(calc(360deg));
     }
@@ -90,6 +91,7 @@ label {
 /* End the loading function%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 :root {
     --blue: #00b8b8;
     --black: #333;
@@ -215,8 +217,11 @@ button {
 }
 
 .home .content {
-    width: 55rem;
-    padding: 2rem;
+    width: 60rem;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .home .content h3 {
@@ -630,9 +635,7 @@ h1 div:first-child {
     html {
         font-size: 55%;
     }
-    .header .link-btn {
-        display: none;
-    }
+
     section {
         padding: 5rem 2rem;
     }
@@ -642,13 +645,16 @@ h1 div:first-child {
     section {
         padding: 3rem 1rem;
     }
+
     #menu-btn {
         display: inline-block;
         transition: .2s linear;
     }
+
     #menu-btn.fa-times {
         transform: rotate(180deg);
     }
+
     .header .nav {
         position: absolute;
         top: 99%;
@@ -660,21 +666,32 @@ h1 div:first-child {
         padding: 1rem 0;
         text-align: center;
         flex-flow: column;
+        display: flex;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: .2s linear;
     }
+
     .header .nav.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+
     .header .nav a {
         margin: 1rem 0;
         font-size: 2rem;
     }
+
     .home {
-        background-position: left;
+        background-position: right;
     }
+
     .home .content {
-        width: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header .link-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -682,9 +699,11 @@ h1 div:first-child {
     html {
         font-size: 50%;
     }
+
     .home .content h3 {
         font-size: 4rem;
     }
+
     .heading {
         font-size: 3rem;
     }
