@@ -659,7 +659,8 @@ h1 div:first-child {
         border-bottom: var(--border);
         padding: 1rem 0;
         text-align: center;
-        flex-flow: column;
+        display: flex;
+        flex-direction: column;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: .2s linear;
     }
